@@ -37,16 +37,16 @@ public class Principal {
     }//Fim do Main
     
     public static int imprimirMenu(){
-        Scanner ler = new Scanner(System.in);
+        try (Scanner ler = new Scanner(System.in)) {
+			System.out.println("*******Menu do Pedido**********");
+			System.out.println("0-Sair");
+			System.out.println("1-Inserir PF");
+			System.out.println("2-Imprimir PF");
+			System.out.println("3-Inserir PJ");
+			System.out.println("4-Imprimir PJ");
 
-        System.out.println("*******Menu do Pedido**********");
-        System.out.println("0-Sair");
-        System.out.println("1-Inserir PF");
-        System.out.println("2-Imprimir PF");
-        System.out.println("3-Inserir PJ");
-        System.out.println("4-Imprimir PJ");
-
-        return ler.nextInt();
+			return ler.nextInt();
+		}
     }
 }//Fim da Classe
 

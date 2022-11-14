@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Pessoa{
     //Atributos
     private String nome;

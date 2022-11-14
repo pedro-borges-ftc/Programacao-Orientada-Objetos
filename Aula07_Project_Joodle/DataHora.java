@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class DataHora {
     //atributos-------------
     private DataEmJava d1 = new DataEmJava();

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.util.Arrays;
 
 public class Aula04_Exec01_v1 {

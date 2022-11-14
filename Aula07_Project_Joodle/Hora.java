@@ -41,15 +41,15 @@ public class Hora {
         return resposta;
     }
     public void preencheHora(){
-        Scanner teclado1 = new Scanner(System.in);
+        try (Scanner teclado1 = new Scanner(System.in)) {
+            System.out.println("Digite a hora: ");
+            this.hora = teclado1.nextInt();
 
-        System.out.println("Digite a hora: ");
-        this.hora = teclado1.nextInt();
+            System.out.println("Digite o minuto: ");
+            this.minuto = teclado1.nextInt();
 
-        System.out.println("Digite o minuto: ");
-        this.minuto = teclado1.nextInt();
-
-        System.out.println("Digite o segundo: ");
-        this.segundo = teclado1.nextInt();
+            System.out.println("Digite o segundo: ");
+            this.segundo = teclado1.nextInt();
+        }
     }
 }

@@ -48,13 +48,13 @@ public class DadosPessoais {
         System.out.println("Idade: " + this.idade);
     }
     public void preencheDadosPessoais(){
-        Scanner ler = new Scanner(System.in);
+        try (Scanner ler = new Scanner(System.in)) {
+            System.out.println("Digite o nome: ");
+            this.nome = ler.nextLine();
 
-        System.out.println("Digite o nome: ");
-        this.nome = ler.nextLine();
-
-        System.out.println("Digite a idade: ");
-        this.idade = ler.nextInt();
+            System.out.println("Digite a idade: ");
+            this.idade = ler.nextInt();
+        }
 
         this.dataNasc.preencheDataEmJava();
     }

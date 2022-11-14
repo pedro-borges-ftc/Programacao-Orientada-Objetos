@@ -38,15 +38,15 @@ public class DataEmJava05 {
         return resposta;
     }
     public void preencheDataEmJava(){
-        Scanner ler = new Scanner(System.in);
+        try (Scanner ler = new Scanner(System.in)) {
+            System.out.println("Digite o dia de Nascimento: ");
+            this.dia = ler.nextInt();
 
-        System.out.println("Digite o dia de Nascimento: ");
-        this.dia = ler.nextInt();
+            System.out.println("Digite o mês de Nascimento: ");
+            this.mes = ler.nextInt();
 
-        System.out.println("Digite o mês de Nascimento: ");
-        this.mes = ler.nextInt();
-
-        System.out.println("Digite o ano de Nascimento: ");
-        this.ano = ler.nextInt();
+            System.out.println("Digite o ano de Nascimento: ");
+            this.ano = ler.nextInt();
+        }
     }
 }
