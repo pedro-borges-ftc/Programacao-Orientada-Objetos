@@ -1,3 +1,5 @@
+package Aula06_Prova;
+
 public class Hora {
     //atributos
     private int hora;

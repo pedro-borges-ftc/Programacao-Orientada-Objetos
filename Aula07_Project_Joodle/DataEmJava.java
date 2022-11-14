@@ -41,15 +41,15 @@ public class DataEmJava {
         return resposta;
     }
     public void preencheDataEmJava(){
-        Scanner ler = new Scanner(System.in);
+        try (Scanner ler = new Scanner(System.in)) {
+            System.out.println("Digite o dia: ");
+            this.dia = ler.nextInt();
 
-        System.out.println("Digite o dia: ");
-        this.dia = ler.nextInt();
+            System.out.println("Digite o mês: ");
+            this.mes = ler.nextInt();
 
-        System.out.println("Digite o mês: ");
-        this.mes = ler.nextInt();
-
-        System.out.println("Digite o ano: ");
-        this.ano = ler.nextInt();
+            System.out.println("Digite o ano: ");
+            this.ano = ler.nextInt();
+        }
     }
 }
