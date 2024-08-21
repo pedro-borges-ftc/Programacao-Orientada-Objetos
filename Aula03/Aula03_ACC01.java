@@ -22,7 +22,7 @@ public class Aula03_ACC01 {
                 anoCarro = ler.nextInt();
 
                 if(anoCarro > 2000){
-                    percDesconto = 0.07;
+                    percDesconto = 0.07;    // 7 / 100
                 }else{
                     percDesconto = 0.12;
                     qtdCarros2000++;
