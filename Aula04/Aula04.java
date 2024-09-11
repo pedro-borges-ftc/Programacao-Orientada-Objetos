@@ -5,19 +5,17 @@ public class Aula04 {
     public static void main(String[] args) {
         String[] nomes = {"","",""};//= { "Fulano", "Ciclano", "Beltrano" };
         try (Scanner ler = new Scanner(System.in)) {
-            int numStringsLidas = 0, tamMaiorString = 0;
-            int posicao = 0;
-            String aux = "", todasStrings = "";
-            
+            int numStringsLidas = 0, tamMaiorString = 0, posicao = 0;
+            String aux = "", todasStrings = "";            
             
             do{
                 System.out.println("***************Digite a String " + (numStringsLidas + 1));
                 aux = ler.nextLine();
 
                 if(buscaElementoArray(nomes, aux) > 0){
-                            break;
+                    break;
                 }else{
-                    todasStrings += aux + " ";
+                    todasStrings += aux + "|";
 
                     if(aux.length() > tamMaiorString){
                         tamMaiorString = aux.length();
