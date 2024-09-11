@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Aula04_ACC2 {
+public class Aula04 {
     public static void main(String[] args) {
         String[] nomes = {"","",""};//= { "Fulano", "Ciclano", "Beltrano" };
         try (Scanner ler = new Scanner(System.in)) {

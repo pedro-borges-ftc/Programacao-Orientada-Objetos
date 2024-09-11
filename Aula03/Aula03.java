@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Aula03_ACC01 {
+public class Aula03 {
     public static void main(String[] args) {
         try (Scanner ler = new Scanner(System.in)) {
             double valorCarro = 0.0;
