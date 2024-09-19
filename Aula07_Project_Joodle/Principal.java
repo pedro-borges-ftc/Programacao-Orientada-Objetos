@@ -1,5 +1,3 @@
-import Aula05.Hora;
-
 public class Principal {
     public static void main(String[] args) {
         Hora agora = new Hora(20,40,00);

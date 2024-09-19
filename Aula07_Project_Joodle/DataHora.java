@@ -1,5 +1,3 @@
-import Aula05.Hora;
-
 public class DataHora {
     //atributos-------------
     private DataEmJava d1 = new DataEmJava();
