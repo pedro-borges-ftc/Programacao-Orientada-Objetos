@@ -1,5 +1,3 @@
-package Aula06_Prova;
-
 public class Questao02 {
     public static void main(String[] args) {
         //hora

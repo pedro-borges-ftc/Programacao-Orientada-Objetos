@@ -1,4 +1,4 @@
-package Aula06_Prova;
+
 
 public class Hora {
     //atributos
