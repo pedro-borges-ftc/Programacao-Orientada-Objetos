@@ -1,3 +1,5 @@
+package Aula06;
+
 public class Questao01 {
     public static void main(String[] args) {
         int c = 4, d = 50, e =2, f = 81;

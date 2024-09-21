@@ -1,3 +1,5 @@
+package Aula06;
+
 public class Hora {
     //atributos
     private int hora;

@@ -1,3 +1,5 @@
+package Aula06;
+
 public class Questao03 {//Classe Cofrinho
     //atributos
 

@@ -1,3 +1,5 @@
+package Aula06;
+
 import javax.swing.JOptionPane;
 
 public class Questao04 {

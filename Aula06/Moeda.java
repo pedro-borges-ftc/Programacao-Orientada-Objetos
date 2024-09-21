@@ -1,3 +1,5 @@
+package Aula06;
+
 public class Moeda {
     //atributos
     private double valor;
