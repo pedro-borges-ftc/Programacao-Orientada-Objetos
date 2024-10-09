@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Principal {
+public class Principal08 {
     public static void main(String args[]) {
     PessoaFisica pf1 = new PessoaFisica();
     PessoaJuridica pj1 = new PessoaJuridica();
