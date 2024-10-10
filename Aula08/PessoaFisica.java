@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class PessoaFisica extends Pessoa{
     //Atributos
     private String cpf;
@@ -25,20 +23,5 @@ public class PessoaFisica extends Pessoa{
         resposta += "CPF: " + this.cpf + "\n";
         
         return resposta;
-    }
-    public void preencherDados(){
-        try (Scanner ler = new Scanner(System.in)) {
-            System.out.println("***PESSOA FÍSICA***");
-            System.out.println("Digite o nome: ");
-            String n = ler.nextLine();
-            this.setNome(n);//***************
-            
-            System.out.println("Digite o endereco: ");
-            String e = ler.nextLine();
-            this.setEndereco(e);//***************
-            
-            System.out.println("Digite o cpf: ");
-            this.cpf = ler.nextLine();
-        }
     }
 }

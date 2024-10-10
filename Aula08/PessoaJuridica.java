@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class PessoaJuridica extends Pessoa{
     //Atributos
     private String cnpj;
@@ -25,20 +23,5 @@ public class PessoaJuridica extends Pessoa{
         resposta += "CNPJ: " + this.cnpj + "\n";
         
         return resposta;
-    }
-    public void preencherDados(){
-        try (Scanner ler = new Scanner(System.in)) {
-            System.out.println("***PESSOA JURÍDICA***");
-            System.out.println("Digite o nome: ");
-            String n = ler.nextLine();
-            this.setNome(n);//***************
-            
-            System.out.println("Digite o endereco: ");
-            String e = ler.nextLine();
-            this.setEndereco(e);//***************
-            
-            System.out.println("Digite o CNPJ: ");
-            this.cnpj = ler.nextLine();
-        }
     }
 }
