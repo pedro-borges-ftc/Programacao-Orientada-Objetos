@@ -1,3 +1,4 @@
+package Aula10e11e12e13;
 public class Contato {
     //Atributos
     int codigo;
