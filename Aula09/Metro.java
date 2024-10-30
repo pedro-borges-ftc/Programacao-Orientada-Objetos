@@ -12,7 +12,7 @@ public class Metro extends Transporte {
         super(empresa, capacidade, linha);
         this.numeroEstacoes = numeroEstacoes;
     }
-    //
+    //Gets e Sets
     public int getNumeroEstacoes() {
         return numeroEstacoes;
     }

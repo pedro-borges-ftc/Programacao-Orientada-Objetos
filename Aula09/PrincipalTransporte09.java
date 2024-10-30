@@ -50,13 +50,13 @@ public class PrincipalTransporte09 {
                             onibus = new Onibus(empresa, capacidade, linha, tipoOnibus);
                             break;
                         case 2://Trem
-                            System.out.print("Tipo do ônibus: ");
+                            System.out.print("Número de vagões: ");
                             int numeroVagoes = scanner.nextInt();
                             scanner.nextLine(); // Consome a quebra de linha
                             trem = new Trem(empresa, capacidade, linha, numeroVagoes);
                             break;
                         case 3://Metrô
-                            System.out.print("Tipo do ônibus: ");
+                            System.out.print("Número de Estações: ");
                             int numeroEstacoes = scanner.nextInt();
                             scanner.nextLine(); // Consome a quebra de linha
                             metro = new Metro(empresa, capacidade, linha, numeroEstacoes);
@@ -86,13 +86,13 @@ public class PrincipalTransporte09 {
                 case 3://3 - Calcular tarifa
                     switch (tipoTransporte) {
                         case 1://Ônibus
-                            onibus.calcularTarifa();
+                            System.out.println("Tarifa: " + onibus.calcularTarifa()); 
                             break;
                         case 2://Trem
-                            trem.calcularTarifa();
+                            System.out.println("Tarifa: " + trem.calcularTarifa());
                             break;
                         case 3://Metrô
-                            metro.calcularTarifa();
+                            System.out.println("Tarifa: " + metro.calcularTarifa());
                             break;
                         default:
                             System.out.println("Opção inválida.");
