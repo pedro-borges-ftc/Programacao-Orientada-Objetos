@@ -1,4 +1,4 @@
-package Aula08.Transporte;
+package Transporte;
 
 public class Onibus extends Transporte {
     //Atributos

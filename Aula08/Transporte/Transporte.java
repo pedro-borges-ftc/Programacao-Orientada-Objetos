@@ -1,4 +1,4 @@
-package Aula08.Transporte;
+package Transporte;
 
 /**
  * Transporte vai ser a superclasse do exercício

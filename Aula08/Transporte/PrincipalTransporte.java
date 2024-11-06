@@ -1,4 +1,4 @@
-package Aula08.Transporte;
+package Transporte;
 
 import java.util.Scanner;
 
