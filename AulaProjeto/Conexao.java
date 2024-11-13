@@ -38,8 +38,12 @@ public class Conexao {
 				//con= DriverManager.getConnection("jdbc:mysql://192.168.0.3:3306/dbsisnutri", "root","1234");
 				//con= DriverManager.getConnection("jdbc:mysql://192.168.43.177:3306/projetomarcos", "teste","Sql1234@");
 				con= DriverManager.getConnection("jdbc:mysql://10.6.255.125:3306/bdteste", "root","root");
-				System.out.println("Conectado com sucesso ao banco:");				
-			}
+				System.out.println("Conectado com sucesso ao banco:");
+				case 4://sqlite
+				Class.forName("com.mysql.jdbc.Driver");
+				con= DriverManager.getConnection("jdbc:mysql://10.6.255.125:3306/bdteste", "root","root");
+				System.out.println("Conectado com sucesso ao banco:");
+			}							
 		}catch(ClassNotFoundException cnfe){
 			System.out.println("Driver não encontrado.");
 			System.out.println(cnfe.getMessage());
